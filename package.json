@@ -1,0 +1,14 @@
+{
+  "name": "prova",
+  "version": "1.0.0",
+  "description": "prova app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.4"
+  }
+}
