@@ -1,5 +1,6 @@
 const { app, BrowserWindow, Menu } = require('electron')
 const isMac = process.platform === 'darwin'
+const shell = require('electron').shell
 // Mantiene un riferimento globale all'oggetto window, se non lo fai, la finestra sarà
 // chiusa automaticamente quando l'oggetto JavaScript sarà garbage collected.
 let win
@@ -34,6 +35,12 @@ function createWindow () {
     label: 'Menu',
     submenu: [
       {label: 'Adjust Notification Value'},
+      {
+        label: 'CoinMarketCup',
+        click(){
+          shell.openExternal('http://www.gioielleriamazzon.it')
+        }
+      },
       isMac ? { role: 'close' } : { role: 'quit' }
     ]
   }
