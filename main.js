@@ -16,7 +16,7 @@ function createWindow () {
   })
 
   // e carica l'index.html dell'app.
-  win.loadFile('index.html')
+  win.loadFile('src/index.html')
 
   // Apre il Pannello degli Strumenti di Sviluppo.
   win.webContents.openDevTools()
@@ -35,6 +35,7 @@ function createWindow () {
     label: 'Menu',
     submenu: [
       {label: 'Adjust Notification Value'},
+      {type: 'separator'},
       {
         label: 'CoinMarketCup',
         click(){
@@ -42,8 +43,10 @@ function createWindow () {
         }
       },
       isMac ? { role: 'close' } : { role: 'quit' }
+      
     ]
-  }
+  },
+  {label: 'info'}
   
   
   
