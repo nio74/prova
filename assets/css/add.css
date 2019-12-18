@@ -1,8 +1,8 @@
-/*body {
+body {
     background:#DFDFDF;
     color:#000;
     overflow:hidden;
-}*/
+}
 
 p.notify {
     background:#C3C3C3;
@@ -30,8 +30,9 @@ input {
 }
 html,body {
 
-    background: rgba(226 , 226, 226, 0,5);
+    background: rgba(266, 266, 266, 0.5);
     height: 100%;
 
 
 }
+
